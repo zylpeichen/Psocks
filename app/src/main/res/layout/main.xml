@@ -1,0 +1,231 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_width="match_parent"
+	android:layout_height="match_parent"
+	android:background="@color/screen_bg"
+	android:fillViewport="true">
+
+	<LinearLayout
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:orientation="vertical"
+		android:padding="20dp">
+
+		<LinearLayout
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:gravity="center_vertical"
+			android:orientation="horizontal">
+
+			<LinearLayout
+				android:layout_width="0dp"
+				android:layout_height="wrap_content"
+				android:layout_weight="1"
+				android:orientation="vertical">
+
+				<TextView
+					android:layout_width="match_parent"
+					android:layout_height="wrap_content"
+					android:text="@string/app_name"
+					android:textColor="@color/text_primary"
+					android:textSize="30sp"
+					android:textStyle="bold" />
+
+				<TextView
+					android:id="@+id/status_text"
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:layout_marginTop="8dp"
+					android:background="@drawable/status_pill"
+					android:paddingLeft="14dp"
+					android:paddingTop="6dp"
+					android:paddingRight="14dp"
+					android:paddingBottom="6dp"
+					android:text="@string/status_idle"
+					android:textColor="@color/accent"
+					android:textStyle="bold" />
+			</LinearLayout>
+
+			<Switch
+				android:id="@+id/power_switch"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:showText="true"
+				android:splitTrack="false"
+				android:textOff="@string/power_off"
+				android:textOn="@string/power_on"
+				android:thumb="@drawable/switch_thumb"
+				android:track="@drawable/switch_track" />
+		</LinearLayout>
+
+		<LinearLayout
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:layout_marginTop="18dp"
+			android:background="@drawable/card_bg"
+			android:elevation="1dp"
+			android:orientation="vertical"
+			android:padding="16dp">
+
+			<LinearLayout
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				android:gravity="center_vertical"
+				android:orientation="horizontal">
+
+				<TextView
+					android:layout_width="0dp"
+					android:layout_height="wrap_content"
+					android:layout_weight="1"
+					android:text="@string/section_apps"
+					android:textColor="@color/text_primary"
+					android:textSize="18sp"
+					android:textStyle="bold" />
+
+				<Button
+					android:id="@+id/apps"
+					style="@style/PSocksCompactButton"
+					android:text="@string/apps" />
+			</LinearLayout>
+
+			<RadioGroup
+				android:id="@+id/route_mode"
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				android:layout_marginTop="10dp"
+				android:orientation="vertical">
+
+				<RadioButton
+					android:id="@+id/route_selected"
+					android:layout_width="match_parent"
+					android:layout_height="wrap_content"
+					android:text="@string/route_selected" />
+
+				<RadioButton
+					android:id="@+id/route_all"
+					android:layout_width="match_parent"
+					android:layout_height="wrap_content"
+					android:text="@string/route_all" />
+
+				<RadioButton
+					android:id="@+id/route_exclude"
+					android:layout_width="match_parent"
+					android:layout_height="wrap_content"
+					android:text="@string/route_exclude" />
+			</RadioGroup>
+		</LinearLayout>
+
+		<LinearLayout
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:layout_marginTop="14dp"
+			android:background="@drawable/card_bg"
+			android:elevation="1dp"
+			android:orientation="vertical"
+			android:padding="16dp">
+
+			<TextView
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				android:text="@string/section_proxy"
+				android:textColor="@color/text_primary"
+				android:textSize="18sp"
+				android:textStyle="bold" />
+
+			<EditText
+				android:id="@+id/proxy_host"
+				style="@style/PSocksInput"
+				android:hint="@string/socks_addr"
+				android:inputType="textUri" />
+
+			<EditText
+				android:id="@+id/proxy_port"
+				style="@style/PSocksInput"
+				android:hint="@string/socks_port"
+				android:inputType="number" />
+
+			<EditText
+				android:id="@+id/proxy_udp_host"
+				style="@style/PSocksInput"
+				android:hint="@string/socks_udp_addr"
+				android:inputType="textUri" />
+
+			<EditText
+				android:id="@+id/proxy_user"
+				style="@style/PSocksInput"
+				android:hint="@string/socks_user"
+				android:inputType="text" />
+
+			<EditText
+				android:id="@+id/proxy_password"
+				style="@style/PSocksInput"
+				android:hint="@string/socks_pass"
+				android:inputType="textPassword" />
+
+			<CheckBox
+				android:id="@+id/udp_over_tcp"
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				android:layout_marginTop="4dp"
+				android:text="@string/udp_in_tcp" />
+		</LinearLayout>
+
+		<LinearLayout
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:layout_marginTop="14dp"
+			android:background="@drawable/card_bg"
+			android:elevation="1dp"
+			android:orientation="vertical"
+			android:padding="16dp">
+
+			<TextView
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				android:text="@string/section_dns"
+				android:textColor="@color/text_primary"
+				android:textSize="18sp"
+				android:textStyle="bold" />
+
+			<CheckBox
+				android:id="@+id/remote_dns"
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				android:text="@string/remote_dns" />
+
+			<EditText
+				android:id="@+id/dns_ipv4"
+				style="@style/PSocksInput"
+				android:digits="0123456789."
+				android:hint="@string/dns_ipv4"
+				android:inputType="text" />
+
+			<EditText
+				android:id="@+id/dns_ipv6"
+				style="@style/PSocksInput"
+				android:digits="0123456789abcdefABCDEF:"
+				android:hint="@string/dns_ipv6"
+				android:inputType="text" />
+
+			<LinearLayout
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				android:orientation="horizontal">
+
+				<CheckBox
+					android:id="@+id/ipv4"
+					android:layout_width="0dp"
+					android:layout_height="wrap_content"
+					android:layout_weight="1"
+					android:text="@string/ipv4" />
+
+				<CheckBox
+					android:id="@+id/ipv6"
+					android:layout_width="0dp"
+					android:layout_height="wrap_content"
+					android:layout_weight="1"
+					android:text="@string/ipv6" />
+			</LinearLayout>
+		</LinearLayout>
+	</LinearLayout>
+</ScrollView>

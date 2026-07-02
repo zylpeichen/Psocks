@@ -1,0 +1,9 @@
+.gradle
+app/.externalNativeBuild
+app/build
+
+local.properties
+/build
+*.apk
+*.aab
+local.properties

@@ -1,0 +1,28 @@
+{
+  "permissions": {
+    "allow": [
+      "Read(//Users/a58/Library/Android/sdk/**)",
+      "Read(//opt/android/**)",
+      "Bash(java -version)",
+      "Bash(ANDROID_HOME=/Users/a58/Library/Android/sdk ANDROID_SDK_ROOT=/Users/a58/Library/Android/sdk ./gradlew assembleDebug *)",
+      "Read(//Users/a58/.gradle/wrapper/dists/**)",
+      "Bash(brew list *)",
+      "Bash(curl -fsSL -o /tmp/gradle-8.8-bin.zip -w \"%{http_code}\" \"https://services.gradle.org/distributions/gradle-8.8-bin.zip\")",
+      "Bash(cp /tmp/gradle-8.8-bin.zip /Users/a58/.gradle/wrapper/dists/gradle-8.8-bin/dl7vupf4psengwqhwktix4v1/)",
+      "Bash(rm -f /Users/a58/.gradle/wrapper/dists/gradle-8.8-bin/dl7vupf4psengwqhwktix4v1/gradle-8.8-bin.zip.lck /Users/a58/.gradle/wrapper/dists/gradle-8.8-bin/dl7vupf4psengwqhwktix4v1/gradle-8.8-bin.zip.part)",
+      "Bash(unzip -q gradle-8.8-bin.zip)",
+      "Bash(curl -fsSL -o /Users/a58/.gradle/wrapper/dists/gradle-8.8-bin/dl7vupf4psengwqhwktix4v1/gradle-8.8-bin.zip \"https://services.gradle.org/distributions/gradle-8.8-bin.zip\")",
+      "Bash(unzip -q -o /Users/a58/.gradle/wrapper/dists/gradle-8.8-bin/dl7vupf4psengwqhwktix4v1/gradle-8.8-bin.zip -d /Users/a58/.gradle/wrapper/dists/gradle-8.8-bin/dl7vupf4psengwqhwktix4v1/)",
+      "Bash(ANDROID_HOME=/Users/a58/Library/Android/sdk ANDROID_SDK_ROOT=/Users/a58/Library/Android/sdk /Volumes/Pe1Chen/AI/Project/socks/sockstun-main/gradlew assembleDebug *)",
+      "Bash(curl -sI --connect-timeout 5 \"https://maven.aliyun.com/repository/public/\")",
+      "Bash(curl -sI --connect-timeout 5 \"https://maven.aliyun.com/repository/central/\")",
+      "Bash(curl -sI --connect-timeout 5 \"https://maven.aliyun.com/nexus/content/groups/public/\")",
+      "Bash(curl -sI --connect-timeout 5 \"https://maven.aliyun.com/repository/google/\")",
+      "Bash(curl -s --connect-timeout 5 \"https://maven.aliyun.com/repository/public/com/android/tools/build/gradle/8.4.1/gradle-8.4.1.pom\")",
+      "Bash(curl -s --connect-timeout 5 \"https://maven.aliyun.com/nexus/content/repositories/central/commons-io/commons-io/2.13.0/commons-io-2.13.0.pom\")",
+      "Bash(curl -sI --connect-timeout 5 \"https://mirrors.cloud.tencent.com/nexus/repository/maven-public/\")",
+      "Bash(curl -sI --connect-timeout 5 \"https://mirrors.huaweicloud.com/repository/maven/\")",
+      "Bash(env)"
+    ]
+  }
+}

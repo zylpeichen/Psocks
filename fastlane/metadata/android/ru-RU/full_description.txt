@@ -1,0 +1,1 @@
+PSocks forwards Android traffic through a SOCKS5 proxy and supports per-app routing, remote DNS, IPv4/IPv6 tunnel controls, and optional UDP relay over TCP.

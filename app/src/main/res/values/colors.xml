@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+	<color name="screen_bg">#F5F7FB</color>
+	<color name="card_bg">#FFFFFFFF</color>
+	<color name="text_primary">#172033</color>
+	<color name="text_secondary">#6A7280</color>
+	<color name="accent">#2F6BFF</color>
+	<color name="accent_pressed">#2453CC</color>
+	<color name="accent_soft">#E8EEFF</color>
+	<color name="accent_soft_pressed">#CFDDFF</color>
+	<color name="switch_off_track">#D6DCE8</color>
+	<color name="button_text">#FFFFFFFF</color>
+</resources>

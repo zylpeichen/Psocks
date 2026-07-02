@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+	<string name="app_name">PSocks</string>
+	<string name="section_proxy">SOCKS5 proxy</string>
+	<string name="section_dns">DNS and tunnel</string>
+	<string name="section_apps">App routing</string>
+	<string name="socks_addr">Proxy host</string>
+	<string name="socks_udp_addr">UDP relay host (optional)</string>
+	<string name="socks_port">Proxy port</string>
+	<string name="socks_user">Username (optional)</string>
+	<string name="socks_pass">Password (optional)</string>
+	<string name="dns_ipv4">IPv4 DNS</string>
+	<string name="dns_ipv6">IPv6 DNS</string>
+	<string name="udp_in_tcp">UDP relay over TCP</string>
+	<string name="remote_dns">Remote DNS</string>
+	<string name="ipv4">IPv4</string>
+	<string name="ipv6">IPv6</string>
+	<string name="route_selected">Only selected apps use VPN</string>
+	<string name="route_all">All apps use VPN</string>
+	<string name="route_exclude">Selected apps bypass VPN</string>
+	<string name="apps">Choose apps</string>
+	<string name="search">Search apps or package names</string>
+	<string name="loading_apps">Loading apps…</string>
+	<string name="back">Back</string>
+	<string name="save">Save</string>
+	<string name="power_on">ON</string>
+	<string name="power_off">OFF</string>
+	<string name="control_enable">Enable</string>
+	<string name="control_disable">Disable</string>
+	<string name="saved">Saved</string>
+	<string name="select_apps_required">Choose at least one app or switch to All apps</string>
+	<string name="invalid_port">Enter a port from 1 to 65535</string>
+	<string name="status_idle">Not connected</string>
+	<string name="status_connected">Connected</string>
+	<string name="notification_running">SOCKS5 VPN is running</string>
+</resources>

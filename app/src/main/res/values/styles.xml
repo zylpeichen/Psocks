@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+	<style name="AppTheme" parent="@android:style/Theme.Material.Light.NoActionBar">
+		<item name="android:fontFamily">sans</item>
+		<item name="android:windowLightStatusBar">true</item>
+		<item name="android:navigationBarColor">@color/screen_bg</item>
+		<item name="android:colorAccent">@color/accent</item>
+	</style>
+
+	<style name="PSocksInput">
+		<item name="android:layout_width">match_parent</item>
+		<item name="android:layout_height">wrap_content</item>
+		<item name="android:layout_marginTop">10dp</item>
+		<item name="android:singleLine">true</item>
+		<item name="android:textColor">@color/text_primary</item>
+		<item name="android:textColorHint">@color/text_secondary</item>
+	</style>
+
+	<style name="PSocksPrimaryButton">
+		<item name="android:layout_height">52dp</item>
+		<item name="android:background">@drawable/button_primary</item>
+		<item name="android:textColor">@color/button_text</item>
+		<item name="android:textStyle">bold</item>
+	</style>
+
+	<style name="PSocksCompactButton">
+		<item name="android:layout_width">112dp</item>
+		<item name="android:layout_height">42dp</item>
+		<item name="android:background">@drawable/button_secondary</item>
+		<item name="android:textColor">@color/accent</item>
+		<item name="android:textStyle">bold</item>
+	</style>
+
+	<style name="PSocksSecondaryButton">
+		<item name="android:layout_width">match_parent</item>
+		<item name="android:layout_height">52dp</item>
+		<item name="android:layout_marginTop">12dp</item>
+		<item name="android:background">@drawable/button_secondary</item>
+		<item name="android:textColor">@color/accent</item>
+		<item name="android:textStyle">bold</item>
+	</style>
+</resources>
